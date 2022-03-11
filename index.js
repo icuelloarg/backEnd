@@ -28,7 +28,7 @@ class User {
   }
   
 
-  const firstUser = new User('Isaias', 'Cuello', [{name:'Choque de Reyes', author: 'George R. R. Martin'},{name:'Full dark, no stars', author: 'Dominique Lapierre'},{name:'Creativity Inc', author: 'Ed Catmull'}],['Perro', 'Pato','Tortuga', 'Canario']);
+  const firstUser = new User('Isaias', 'Cuello', [{name:'Choque de Reyes', author: 'George R. R. Martin'},{name:'Full dark, no stars', author: 'Stephen King'},{name:'Creativity Inc', author: 'Ed Catmull'}],['Perro', 'Pato','Tortuga', 'Canario']);
   
 
   console.log(firstUser.countPets());
