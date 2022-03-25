@@ -1,4 +1,27 @@
-class User {
+
+
+const express =  require('express')
+
+
+const app = express()
+
+const port = 8080 || process.env.port
+
+app.use(express.json())
+
+app.use(express.urlencoded({ extended: true }))
+
+app.listen (port, () =>{
+    console.log(`App listening ${port}`)
+
+})
+
+
+module.exports = app;
+
+
+
+/* class User {
     constructor(name, lastname, books = [], pets = []){
         this.name = name;
         this.lastname = lastname;
@@ -42,3 +65,4 @@ class User {
   console.log(firstUser.countPets());
 
   console.log(firstUser.getBookNames());
+ */
